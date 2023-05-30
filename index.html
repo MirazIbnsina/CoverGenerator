@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js">
+ 
+    </script>
+ 
+
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-dark bg-dark mb-3">
+        <span class="navbar-brand">
+            <img src="images/logo-224.png" width="32" height="32" class="d-inline-block align-top" alt=""> Cover Page Generator <sup> <span class="badge badge-secondary">Beta</span> <span class="badge badge-secondary">V 1.5</span></sup>
+        </span>
+    </nav>
+<div class="card mt-5">
+    <div class="card-body">
+<p class="text-center">Fill the form correctly & submit...</p>
+ 
+
+<div class="container-fluid">
+<form action="view.php" method="POST">
+
+    
+    <div class="card border mb-3">
+        <div class="card-header">Student Information </div>
+        <div class="card-body">
+            
+            <div class="form-row align-items-center">
+                <div class="col-sm-4 my-1">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Student Full Name" maxlength = "35" required>
+                </div>
+    
+                <div class="col-sm-4 my-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">ID</div>
+                        </div>
+                        <input type="text" class="form-control" id="id" name="id" placeholder="CSE 023 07224" required>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 my-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Program</div>
+                        </div>
+                        <select class=" form-control" name="program">
+                            <option selected value="B.Sc. in ">(B.Sc.) Bachelor of science</option>
+                            <option value="M.Sc. in ">(M.Sc.) Master of Science</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <p class="card-text"></p>
+    
+            </div>
+        </div>
+    </div>
+
+
+      
+    <div class="card border mb-3">
+        <div class="card-header">Course Information </div>
+        <div class="card-body">
+            
+            <div class="form-row align-items-center">
+                <div class="form-group col-md-4">
+                  <label for="inputEmail4">Course Code</label>
+                  <input type="text" class="form-control" id="code" name="code" maxlength = "8" placeholder="CSE 101" required>
+                </div>
+                <div class="form-group col-md-8">
+                   <label for="course">Course Name</label>
+                   <input type="text" class="form-control" id="course" name="course" maxlength = "50" placeholder="Algorithm Sessional" required>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="topic1">
+                            <div class="input-group-text">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                  <input type="radio" id="ass" name="type" class="custom-control-input" value="1" checked>
+                                  <label class="custom-control-label" for="ass">Assignment</label>
+                                </div>
+                                <div class="custom-control custom-radio ">
+                                  <input type="radio" id="re" name="type" class="custom-control-input" value="2">
+                                  <label class="custom-control-label" for="re">Report on</label>
+                                </div>
+                            </div>
+                </label>
+                
+                <input class="form-control" type="text" id="topics1" name="topics1" maxlength = "52" placeholder="1st line (max 50 characters)" required>
+                <input class="form-control" type="text" id="topics2" name="topics2" maxlength = "56" placeholder="2nd line (input the rest if any)">
+            </div>
+          
+                
+                
+    
+        </div>
+    </div>
+    
+    
+    <div class="card border mb-3">
+        <div class="card-header">Teacher Information</div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="teacher">Teacher Name</label>
+                  <input class="form-control" type="text" id="teacher" name="teacher" maxlength = "35" placeholder="Soumitra Das" required>
+            </div>
+                
+            <div class="form-row align-items-center">
+                <div class="form-group col-md-7">
+                   <label for="desig">Teacher Designation</label>
+                    <input class="form-control" type="text" id="desig" name="desig" maxlength = "15" placeholder="Senior Lecturer" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="dept">Department of</label>
+                    <input class="form-control" type="text" id="dept" name="tdept" placeholder="CSE" required>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-row  justify-content-center">
+        <div class="col-auto">
+          <div class="input-group mb-2 border border-primary rounded">
+            <div class="input-group-prepend">
+              <div class="input-group-text text-primary">Date of Submission</div>
+            </div>
+            <input type="text" class="form-control" id="date" name="date" placeholder="19 Jan, 2023">
+          </div>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+    </div>
+
+  
+  </form>
+  
+</div>  
+</div>  
+</div>
+<br><br><br><br>
+
+
+     <script type="text/javascript">
+     
+        $(document).ready(function () {
+ 
+            Inputmask("AAA 099 07999",  {
+                placeholder: "_",
+                greedy: false,
+                casing: "upper",
+                jitMasking: true
+            }).mask('#id');
+            
+            
+            Inputmask("99 Aaa, 2023", {
+                placeholder: "_",
+                greedy: false,
+                jitMasking: true
+            }).mask('#date');
+            
+            
+    
+        });
+        
+    </script>
+
+    
+</body>
+</html>
+ 

@@ -1,4 +1,4 @@
-# CoverGenerator
+# Cover Generator
 
 This is a php project to generate a cover page as PDF and PNG format. The cover page layout and background is made for Port City International University. The layout can change by changing the background png (save as cover.jpg).
 

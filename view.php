@@ -167,6 +167,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <br><br><hr><br><p>Thank you for using the generator <3</p>
-<a class="btn btn-outline-secondary" href="https://bmc.link/mirazibnsina">Buy me a coffee 😑</a><br><br><br><hr><br><br>
 </body>
 </html>

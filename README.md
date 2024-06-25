@@ -7,4 +7,4 @@ After generate a png it will store the photo in */images* folder. And then by th
 
 
 
-Here is the preview: https://cover-cse.000webhostapp.com/
+Here is the preview: http://pciu.22web.org/cover/
